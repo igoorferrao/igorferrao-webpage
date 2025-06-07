@@ -5,8 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Projeto Tailwind</title>
+
     <link href="./src/input.css" rel="stylesheet"/>
     <link href="./src/output.css" rel="stylesheet"/>
+
+    <script src="./languages/lang.js"></script>
+
 </head>
 
 <body class="bg-white dark:bg-gray-950 [background-image:radial-gradient(at_-50%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(255,_255,_255,_0)_50%),radial-gradient(at_160%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(255,_255,_255,_0)_50%),radial-gradient(at_180%_120%,oklch(76.9%_0.188_70.08)_0%,rgba(0,0,0,_0)_50%)] [dark:background-image:radial-gradient(at_-45%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(0,0,0,_0)_50%),radial-gradient(at_140%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(255,_255,_255,_0)_50%),radial-gradient(at_180%_120%,oklch(76.9%_0.188_70.08)_0%,rgba(0,0,0,_0)_50%)]">
@@ -44,7 +48,7 @@
                     </li>
 
                     <li>
-                        <a href="http://wa.me/+5513996161204" class="group relative inline-flex items-center gap-1 text-neutral-700 dark:text-neutral-50 hover:text-amber-500">
+                        <a data-i18n="contact" href="http://wa.me/+5513996161204" class="group relative inline-flex items-center gap-1 text-neutral-700 dark:text-neutral-50 hover:text-amber-500">
                             Contato
                             <span class="relative flex size-3 min-md:opacity-0 min-md:group-hover:opacity-100">
                                 <span class="absolute inline-flex size-3 animate-ping rounded-full bg-amber-400 opacity-75"></span>
@@ -58,6 +62,11 @@
                             <span class="text-xl">contrast</span>
                         </button>
                     </li>
+
+                    <li>
+                        <button id="lang-toggle" class="text-sm text-neutral-700 dark:text-neutral-50">PT</button>
+                    </li>
+
                 </ul>
             </nav>
 
@@ -67,17 +76,17 @@
                 
                 <div class="flex flex-col ">
                     
-                    <span class="font-medium text-sm text-amber-600 dark:text-amber-400 mb-5">Hi,</span>
+                    <span data-i18n="hi" class="font-medium text-sm text-amber-600 dark:text-amber-400 mb-5">Hi,</span>
                     <div>
-                        <h4 class="text-3xl font-bold text-gray-950 dark:text-gray-50 mb-1">I'm Igor Ferrão</h4>
-                        <h5 class="text-2xl font-normal text-gray-600 dark:text-gray-400 mb-5">UX UI Designer at <span class="text-gray-950 dark:text-gray-50">Xgrow</span><h5>
+                        <h4 data-i18n="name" class="text-3xl font-bold text-gray-950 dark:text-gray-50 mb-1">I'm Igor Ferrão</h4>
+                        <h5 data-i18n="role" class="text-2xl font-normal text-gray-600 dark:text-gray-400 mb-5">UX UI Designer at <span class="text-gray-950 dark:text-gray-50">Xgrow</span><h5>
                         <div class="*:mb-6 *:dark:text-gray-400">
-                            <p>Product Designer (UX/UI) with over 5 years of experience in creating scalable, functional, and user-centered digital products.</p>
-                            <p>I work from concept to delivery of complete digital solutions, focusing on the creation of Design Systems, advanced components in Figma, and efficient interfaces that ensure consistency across design and development teams.</p>
-                            <p>I hold a degree in Information Systems, which allows me to bridge design and technology effectively, collaborating with multidisciplinary teams in agile and remote environments.</p>
-                            <p>I apply methods such as:<br>
+                            <p data-i18n="paragraph1">Product Designer (UX/UI) with over 5 years of experience in creating scalable, functional, and user-centered digital products.</p>
+                            <p data-i18n="paragraph2">I work from concept to delivery of complete digital solutions, focusing on the creation of Design Systems, advanced components in Figma, and efficient interfaces that ensure consistency across design and development teams.</p>
+                            <p data-i18n="paragraph3">I hold a degree in Information Systems, which allows me to bridge design and technology effectively, collaborating with multidisciplinary teams in agile and remote environments.</p>
+                            <p data-i18n="paragraph4">I apply methods such as:<br>
                             Information Architecture | Low and High-Fidelity Prototyping | Usability Testing | Qualitative and Quantitative Research | User-Centered Design | Design Thinking | Agile | Lean UX</p>
-                            <p>I believe in design that balances aesthetics, accessibility, strategy, and results. Guided by strong values, I’m always looking to create experiences that truly make a positive impact.</p>
+                            <p data-i18n="paragraph5">I believe in design that balances aesthetics, accessibility, strategy, and results. Guided by strong values, I’m always looking to create experiences that truly make a positive impact.</p>
                         </div>
                     </div>
                 </div>
@@ -123,6 +132,30 @@
         document
             .getElementById("theme-toggle")
             .addEventListener("click", toggleTheme);
+
+        function applyTranslation(lang) {
+            const elements = document.querySelectorAll("[data-i18n]");
+            elements.forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                if (translations[lang] && translations[lang][key]) {
+                el.innerHTML = translations[lang][key]; // Suporta <span> dentro
+                }
+            });
+            localStorage.setItem("lang", lang);
+            document.getElementById("lang-toggle").textContent = lang.toUpperCase();
+            }
+
+            // Detecta idioma salvo ou default para pt
+            const userLang = localStorage.getItem("lang") || "pt";
+            applyTranslation(userLang);
+
+            // Alternância de idioma ao clicar no botão
+            document.getElementById("lang-toggle").addEventListener("click", () => {
+            const currentLang = localStorage.getItem("lang") || "pt";
+            const nextLang = currentLang === "pt" ? "en" : currentLang === "en" ? "es" : "pt";
+            applyTranslation(nextLang);
+        });
+
     </script>
 
 </body>
