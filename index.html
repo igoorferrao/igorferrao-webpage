@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Projeto Tailwind</title>
+    <link href="/src/input.css" rel="stylesheet"/>
+    <link href="/src/output.css" rel="stylesheet"/>
+</head>
+
+<body class="bg-white dark:bg-gray-950 [background-image:radial-gradient(at_-50%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(255,_255,_255,_0)_50%),radial-gradient(at_160%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(255,_255,_255,_0)_50%),radial-gradient(at_180%_120%,oklch(76.9%_0.188_70.08)_0%,rgba(0,0,0,_0)_50%)] [dark:background-image:radial-gradient(at_-45%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(0,0,0,_0)_50%),radial-gradient(at_140%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(255,_255,_255,_0)_50%),radial-gradient(at_180%_120%,oklch(76.9%_0.188_70.08)_0%,rgba(0,0,0,_0)_50%)]">
+    
+    <div class="w-auto overflow-hidden min-h-screen flex justify-center items-center p-4"> 
+       
+        <main class=" w-full max-w-[1200px] flex-1 rounded-xl bg-[oklch(0.9933_0.0011_197.14)] dark:bg-[oklch(0.2125_0.0109_260.67)] shadow-xl dark:shadow-white/5">
+                
+            <nav class="flex w-full sticky top-0 h-20 px-6 md:px-12 rounded-tl-xl rounded-tr-xl justify-between items-center border-b border-neutral-100 dark:border-neutral-800 bg-[hsla(0,0%,100%,0.6)] dark:bg-[oklch(0.1913_0_0/60%)] backdrop-blur-md">
+                <!-- Nome -->
+                <a href="#" class="flex items-center space-x-1">
+                    <span class="text-neutral-900 dark:text-neutral-50 text-2xl font-light leading-8">Igor</span>
+                    <span class="text-neutral-800 dark:text-neutral-100 text-2xl font-medium leading-8">Ferrão</span>
+                </a>
+
+                <!-- Menu -->
+                <ul class="flex items-center gap-6 h-6">
+                    <li class="max-md:hidden">
+                        <a href="https://www.linkedin.com/in/igor-ferrao-de-souza/" class="group inline-flex items-center gap-1 text-neutral-700 dark:text-neutral-50 hover:text-[#0e76a8]">
+                            Linkedin
+                            <span class="material-symbols-outlined opacity-0 group-hover:opacity-100">arrow_outward</span>
+                        </a>
+                    </li>
+
+                    <li class="max-md:hidden">
+                        <a href="https://www.instagram.com/igoorferrao/" class="group inline-flex items-center gap-1 text-neutral-700 dark:text-neutral-50 hover:bg-gradient-to-r hover:from-amber-400 hover:to-pink-500 hover:bg-clip-text hover:text-transparent">
+                            Instagram
+                            <span class="material-symbols-outlined opacity-0 group-hover:opacity-100">arrow_outward</span>
+                        </a>
+                    </li>
+
+                    <li class="max-md:hidden">
+                        <a href="https://www.youtube.com/@FerraoDesign" class="group inline-flex items-center gap-1 text-neutral-700 dark:text-neutral-50 hover:text-red-500">
+                            Youtube
+                            <span class="material-symbols-outlined opacity-0 group-hover:opacity-100">arrow_outward</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://wa.me/+5513996161204" class="group relative inline-flex items-center gap-1 text-neutral-700 dark:text-neutral-50 hover:text-amber-500">
+                            Contato
+                            <span class="relative flex size-3 min-md:opacity-0 min-md:group-hover:opacity-100">
+                                <span class="absolute inline-flex size-3 animate-ping rounded-full bg-amber-400 opacity-75"></span>
+                                <span class="relative inline-flex size-3 rounded-full bg-amber-500"></span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <!-- Toggle tema -->
+                    <li class="flex items-center">
+                        <button id="theme-toggle" class="material-symbols-outlined text-gray-800 dark:text-gray-200 cursor-pointer">
+                            <span class="text-xl">contrast</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <div class="flex p-8 md:p-12 gap-6 max-md:flex-col-reverse">
+                
+                <div class="flex flex-col ">
+                    
+                    <span class="font-medium text-sm text-amber-600 dark:text-amber-400 mb-5">Hi,</span>
+                    <div>
+                        <h4 class="text-3xl font-bold text-gray-950 dark:text-gray-50 mb-1">I'm Igor Ferrão</h4>
+                        <h5 class="text-2xl font-normal text-gray-600 dark:text-gray-400 mb-5">UX UI Designer at <span class="text-gray-950 dark:text-gray-50">Xgrow</span><h5>
+                        <div class="*:mb-6 *:dark:text-gray-400">
+                            <p>Product Designer (UX/UI) with over 5 years of experience in creating scalable, functional, and user-centered digital products.</p>
+                            <p>I work from concept to delivery of complete digital solutions, focusing on the creation of Design Systems, advanced components in Figma, and efficient interfaces that ensure consistency across design and development teams.</p>
+                            <p>I hold a degree in Information Systems, which allows me to bridge design and technology effectively, collaborating with multidisciplinary teams in agile and remote environments.</p>
+                            <p>I apply methods such as:<br>
+                            Information Architecture | Low and High-Fidelity Prototyping | Usability Testing | Qualitative and Quantitative Research | User-Centered Design | Design Thinking | Agile | Lean UX</p>
+                            <p>I believe in design that balances aesthetics, accessibility, strategy, and results. Guided by strong values, I’m always looking to create experiences that truly make a positive impact.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="/img/foto-igor-cafe.JPG" alt="foto igor ferrão" class="aspect-4/5 max-w-[128px] md:max-w-1/2 object-cover rounded-xl">
+                
+                
+            </div>
+
+            
+        </main>
+    </div>
+
+    <script>
+        // Função para aplicar o tema com base na preferência armazenada ou na configuração do sistema
+        function applyTheme() {
+            const storedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia(
+                "(prefers-color-scheme: dark)"
+            ).matches;
+            const htmlElement = document.documentElement;
+
+            if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+                htmlElement.classList.add("dark");
+            } else {
+                htmlElement.classList.remove("dark");
+            }
+        }
+
+        // Função para alternar o tema e armazenar a preferência
+        function toggleTheme() {
+            const htmlElement = document.documentElement;
+            const isDark = htmlElement.classList.contains("dark");
+
+            if (isDark) {
+                htmlElement.classList.remove("dark");
+                localStorage.setItem("theme", "light");
+            } else {
+                htmlElement.classList.add("dark");
+                localStorage.setItem("theme", "dark");
+            }
+        }
+
+        // Aplicar o tema ao carregar a página
+        applyTheme();
+
+        // Adicionar o evento de clique ao botão de alternância
+        document
+            .getElementById("theme-toggle")
+            .addEventListener("click", toggleTheme);
+    </script>
+
+</body>
+
+</html>
