@@ -1,25 +1,59 @@
 @import "tailwindcss";
-
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@custom-variant dark (&:where(.dark, .dark *));
 
-.material-symbols-outlined {
-  font-family: 'Material Symbols Outlined';
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  font-size: inherit;
+:root {
+  --color-brand: var(--color-amber-500);
 
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24;
+  --color-background: #ffffff;
+
+  --color-surface-1: #FCFCFD;
+  --color-surface-2: #F4F5F6;
+  --color-surface-3: #EBECEE;
+
+  --color-on-surface-1: #2B313B;
+  --color-on-surface-2: #556377;
+  --color-on-surface-3: #9EA6B2;
+
+  --color-border-1: #D4D7DC;
+  --color-border-2: #EBECEE;
+  --color-border-3: #FCFCFD;
+}
+
+.dark {
+  --color-brand: var(--color-amber-600);
+
+  --color-background: #0b0d0f;
+
+  --color-surface-1: #16191E;
+  --color-surface-2: #20252C;
+  --color-surface-3: #2B313B;
+
+  --color-on-surface-1: #FCFCFD;
+  --color-on-surface-2: #9EA6B2;
+  --color-on-surface-3: #556377;
+
+  --color-border-1: #3C4654;
+  --color-border-2: #2B313B;
+  --color-border-3: #16191E;
+}
+
+@theme {
+  --color-bg-background: var(--color-background);
+
+  --color-bg-surface-1: var(--color-surface-1);
+  --color-bg-surface-2: var(--color-surface-2);
+  --color-bg-surface-3: var(--color-surface-3);
+
+  --color-text-primary: var(--color-on-surface-1);
+  --color-text-secondary: var(--color-on-surface-2);
+  --color-text-tertiary: var(--color-on-surface-3);
+
+  --color-border-primary: var(--color-border-1);
+  --color-border-secondary: var(--color-border-2);
+  --color-border-tertiary: var(--color-border-3);
+
+  --color-brand: var(--color-brand);
 }
 
 html {
@@ -33,5 +67,3 @@ body {
 main, nav {
   transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
 }
-
-@custom-variant dark (&:where(.dark, .dark *));
