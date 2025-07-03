@@ -11,17 +11,17 @@ const translations = {
     contact: "Contato",
 
     // Nova seção
-    originTitle: "Igor Ferrão, nascido e baseado no Brasil.",
+    originTitle: "Igor Ferrão, nascido e residente no Brasil.",
     originText: "Trabalhando com empresas que têm UX como parte de seus processos e que acreditam na colaboração entre as equipes.",
 
     expertiseTitle: "Especialidades",
     highlightTitle: "Destaques",
 
     expertise1: [
-      "Gestão de equipes de design",
+      "Gerenciamento de times de design",
       "Gestão de stakeholders",
       "Framework de excelência",
-      "Pesquisa exploratória",
+      "Pesquisa exploratória (discovery)",
       "Sessões de testes de usabilidade",
       "Pesquisa de mercado"
     ],
@@ -29,7 +29,7 @@ const translations = {
       expertise2: [
       "Relatórios e auditorias de UX",
       "Evangelização de UX",
-      "Mentoria de designers para entregas de qualidade",
+      "Mentoria para designers entregarem com qualidade",
       "Design thinking",
       "Prototipagem",
       "Handoff colaborativo com devs"
@@ -124,7 +124,7 @@ const translations = {
     paragraph5: "Creo en un diseño que equilibra estética, accesibilidad, estrategia y resultados. Guiado por valores sólidos, siempre busco crear experiencias que realmente generen un impacto positivo.",
     contact: "Contacto",
 
-    originTitle: "Igor Ferrão, nacido y radicado en Brasil.",
+    originTitle: "Igor Ferrão, nacido y residente en Brasil.",
     originText: "Trabajando con empresas que tienen UX como parte de sus procesos, con creencia en el trabajo colaborativo entre equipos.",
 
     expertiseTitle: "Especialidades",
@@ -134,7 +134,7 @@ const translations = {
       "Gestión de equipos de diseño",
       "Gestión de stakeholders",
       "Marco de excelencia",
-      "Investigación exploratoria",
+      "Investigación exploratoria (discovery)",
       "Sesiones de pruebas de usabilidad",
       "Investigación de mercado"
     ],
@@ -142,10 +142,10 @@ const translations = {
     expertise2: [
       "Informes y auditorías de UX",
       "Evangelización de UX",
-      "Mentoría para diseñadores",
+      "Mentoría para que los diseñadores entreguen con calidad",
       "Design thinking",
       "Prototipado",
-      "Handoff colaborativo con desarrolladores"
+      "Entrega colaborativa con desarrolladores"
     ],
 
     highlights1: [
