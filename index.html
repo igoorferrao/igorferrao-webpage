@@ -2,13 +2,14 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Portfolio - Igor Ferrão</title>
 
     <link href="./src/input.css" rel="stylesheet"/>
     <link href="./src/output.css" rel="stylesheet"/>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <script src="./languages/lang.js"></script>
 
 </head>
@@ -29,37 +30,33 @@
                     <li class="max-md:hidden">
                         <a href="https://www.linkedin.com/in/igor-ferrao-de-souza/" class="group inline-flex items-center gap-1 text-neutral-700 dark:text-neutral-50 hover:text-[#0e76a8]">
                             Linkedin
-                            <span class="material-symbols-outlined opacity-0 group-hover:opacity-100">arrow_outward</span>
+                            <i class="ri-arrow-right-up-line opacity-0 group-hover:opacity-100"></i>
                         </a>
                     </li>
 
                     <li class="max-md:hidden">
                         <a href="https://www.instagram.com/igoorferrao/" class="group inline-flex items-center gap-1 text-neutral-700 dark:text-neutral-50 hover:bg-gradient-to-r hover:from-amber-400 hover:to-pink-500 hover:bg-clip-text hover:text-transparent">
                             Instagram
-                            <span class="material-symbols-outlined opacity-0 group-hover:opacity-100">arrow_outward</span>
+                            <i class="ri-arrow-right-up-line opacity-0 group-hover:opacity-100"></i>
                         </a>
                     </li>
 
                     <li class="max-md:hidden">
                         <a href="https://www.youtube.com/@FerraoDesign" class="group inline-flex items-center gap-1 text-neutral-700 dark:text-neutral-50 hover:text-red-500">
                             Youtube
-                            <span class="material-symbols-outlined opacity-0 group-hover:opacity-100">arrow_outward</span>
+                            <i class="ri-arrow-right-up-line opacity-0 group-hover:opacity-100"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a data-i18n="contact" href="http://wa.me/+5513996161204" class="group relative inline-flex items-center gap-1 text-text-primary hover:text-amber-500">
+                        <a data-i18n="contact" href="http://wa.me/+5513996161204" class="inline-flex items-center gap-1 text-text-primary hover:text-amber-500">
                             Contato
-                            <span class="relative flex size-3 min-md:opacity-0 min-md:group-hover:opacity-100">
-                                <span class="absolute inline-flex size-3 animate-ping rounded-full bg-amber-400 opacity-75"></span>
-                                <span class="relative inline-flex size-3 rounded-full bg-amber-500"></span>
-                            </span>
                         </a>
                     </li>
 
                     <li class="flex items-center">
                         <button id="theme-toggle" class="material-symbols-outlined text-text-primary cursor-pointer">
-                            <span class="text-xl">contrast</span>
+                            <i class="ri-contrast-2-line"></i>
                         </button>
                     </li>
 
@@ -71,15 +68,15 @@
             </nav>
 
             <section class="flex p-8 md:p-12 gap-6 max-md:flex-col-reverse">
-                
+
                 <div class="flex flex-col ">
                     
-                    <span data-i18n="hi" class="font-medium text-sm text-brand mb-5">Hi,</span>
+                    <span data-i18n="hi" class="font-medium text-sm text-brand mb-3">Hi,</span>
                     
                     <div>
-                        <h4 data-i18n="name" class="text-3xl font-bold text-text-primary mb-1">I'm Igor Ferrão</h4>
-                        <h5 data-i18n="role" class="text-2xl font-normal text-text-secondary mb-5">UX UI Designer at alguma coisa<h5>
-                        <div class="*:mb-6 text-text-tertiary">
+                        <h4 data-i18n="name" class="text-3xl font-bold text-text-primary mb-2">I'm Igor Ferrão</h4>
+                            <h5 data-i18n="role" class="text-2xl font-normal text-text-secondary mb-5 inline-flex">UX UI Designer at Xgrow Learning Platform<h5>
+                        <div class="*:mb-6 text-text-primary">
                             <p data-i18n="paragraph1">Product Designer (UX/UI) with over 5 years of experience in creating scalable, functional, and user-centered digital products.</p>
                             <p data-i18n="paragraph2">I work from concept to delivery of complete digital solutions, focusing on the creation of Design Systems, advanced components in Figma, and efficient interfaces that ensure consistency across design and development teams.</p>
                             <p data-i18n="paragraph3">I hold a degree in Information Systems, which allows me to bridge design and technology effectively, collaborating with multidisciplinary teams in agile and remote environments.</p>
@@ -94,41 +91,75 @@
                 
             </section>
 
-            <section class="flex flex-col p-8 md:p-12 gap-6">
-                <div>
-                    <h4 class="text-3xl font-bold text-gray-950 dark:text-gray-50 mb-1">Igor Ferrão, born and based in Brazil. 🇧🇷</h4>
-                    <p>Working with companies that have UX as part of their process, belief in collaborative working between teams.</p>
+            <section class="flex max-sm:flex-col p-8 md:p-12 gap-16">
+                <div class="md:sticky md:top-24 h-fit"> 
+                    <h4 class="text-3xl font-bold text-text-primary mb-2">Igor Ferrão, born and based in Brazil. 🇧🇷</h4>
+                    <p class="text-text-primary">Working with companies that have UX as part of their process, belief in collaborative working between teams.</p>
                 </div>
-                <div>
-                    <h6 class="font-semibold mb-4">Expertise</h6>
-                    <ul class="text-gray-600 *:items-center *:flex ">
-                        <li><i data-lucide="minus" class="mr-2"></i>Managing design teams</li>
-                        <li><i data-lucide="minus" class="mr-2"></i>Stakeholder management</li>
-                        <li><i data-lucide="minus" class="mr-2"></i>Excellence framework</li>
-                        <li><i data-lucide="minus" class="mr-2"></i>Discovery research</li>
-                        <li><i data-lucide="minus" class="mr-2"></i>Usability testing sessions</li>
-                        <li><i data-lucide="minus" class="mr-2"></i>Market research</li>
-                    </ul>
-                    <ul class="text-gray-600 *:items-center *:flex ">
-                        <li><i data-lucide="minus" class="mr-2"></i>UX reports and audits</li>
-                        <li><i data-lucide="minus" class="mr-2"></i>Evangelizing UX</li>
-                        <li><i data-lucide="minus" class="mr-2"></i>Coach designers to deliver quality</li>
-                        <li><i data-lucide="minus" class="mr-2"></i>Design thinking</li>
-                        <li><i data-lucide="minus" class="mr-2"></i>Prototyping</li>
-                        <li><i data-lucide="minus" class="mr-2"></i>Collaborative handoff with devs</li>
-                    </ul>
-                </div>
+                <div class="flex flex-col">
+                    <h6 class="text-text-primary font-semibold mb-6">Expertise</h6>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 mb-16">
+                        <ul class="*:text-text-secondary *:items-center *:flex">
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>Managing design teams</li>
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>Stakeholder management</li>
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>Excellence framework</li>
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>Discovery research</li>
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>Usability testing sessions</li>
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>Market research</li>
+                        </ul>
+                        <ul class="*:text-text-secondary *:items-center *:flex ">
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>UX reports and audits</li>
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>Evangelizing UX</li>
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>Coach designers to deliver quality</li>
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>Design thinking</li>
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>Prototyping</li>
+                            <li><i class="ri-arrow-drop-right-line mr-2"></i>Collaborative handoff with devs</li>
+                        </ul>
+                    </div>
 
-                <div class="grid grid-cols-1">
-                    <h6 class="font-semibold mb-4 dark:text-neutral-50">Highlights</h6>
+                    <div class="grid grid-cols-1">
+                        <h6 class="text-text-primary font-semibold mb-6">Highlights</h6>
 
-                    <div class="bg-surface-1 border-1 border-border-primary text-text-primary p-6 rounded-xl">
-                            <i data-lucide="star" class="mb-2 text-text-primary"></i>
-                            <p><strong>UXC (UX Certified)</strong> by the Nielsen Norman Group and Second Wave Dive (Strategic Business Thinking).</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-surface-1  text-text-primary mb-8">
+                                    <i class="ri-star-line mb-2 text-text-primary text-2xl"></i>
+                                    <p class="text-text-secondary"><strong class="text-text-primary">UXC (UX Certified)</strong> by the Nielsen Norman Group and Second Wave Dive (Strategic Business Thinking).</p>
+                            </div>
+
+                            <div class="bg-surface-1 text-text-primary mb-8">
+                                    <i class="ri-star-line mb-2 text-text-primary text-2xl"></i>
+                                    <p>Background working with design agencies, startups and corporate companies to <strong>deliver websites and native apps.</strong></p>
+                            </div>
+
+                            <div class="bg-surface-1 text-text-primary mb-8">
+                                    <i data-lucide="message-circle-more" class="mb-2 text-text-primary"></i>
+                                    <p><strong>Spoke at numerous events </strong>about design, user experience, design systems and team management.</p>
+                            </div>
+
+                            <div class="bg-surface-1 text-text-primary mb-8">
+                                    <i data-lucide="graduation-cap" class="mb-2 text-text-primary"></i>
+                                    <p><strong>Founder and Instructor @ <a href="https://www.instagram.com/ferraodesign/" target="_blank" class="hover:underline">Ferrão Design</a></strong>, an immersive User Experience training with 4500+ alumni in Brazil.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
             
+            <footer class="flex max-sm:flex-col p-8 md:p-12 gap-16 bg-bg-background-inverted rounded-br-2xl rounded-bl-2xl">
+                <div class="flex flex-col">
+                    <h2 class="font-bold text-3xl text-text-inverted mb-14">Let's talk about design, marketing, business, or one of my hobbies like chess or coffee maybe?</h2>
+                    <a href="#" class="flex items-center space-x-1 mb-4">
+                        <span class="text-text-inverted text-2xl font-light leading-8">Igor</span>
+                        <span class="text-text-inverted text-2xl font-medium leading-8">Ferrão</span>
+                    </a>
+
+                    <div class="flex *:flex *:justify-center *:items-center gap-3 text-text-inverted [&>div>a>i]:text-2xl *:size-10 *:rounded-full *:bg-bg-surface-1/10">
+                        <div><a href="https://www.instagram.com/igoorferrao/"><i class="ri-instagram-line"></i></a></div>
+                        <div><a href="https://www.linkedin.com/igor-ferrao-de-souza/"><i class="ri-linkedin-line"></i></a></div>
+                        <div><a href="https://www.youtube.com/igoorferrao/"><i class="ri-youtube-line"></i></a></div>
+                    </div>
+                </div>
+            </footer>
         </main>
     </div>
 
@@ -171,14 +202,14 @@
             elements.forEach(el => {
                 const key = el.getAttribute("data-i18n");
                 if (translations[lang] && translations[lang][key]) {
-                el.innerHTML = translations[lang][key]; // Suporta <span> dentro
+                el.innerHTML = translations[lang][key];
                 }
             });
             localStorage.setItem("lang", lang);
             document.getElementById("lang-toggle").textContent = lang.toUpperCase();
             }
 
-            // Detecta idioma salvo ou default para pt
+            
             const userLang = localStorage.getItem("lang") || "pt";
             applyTranslation(userLang);
 
@@ -189,10 +220,6 @@
             applyTranslation(nextLang);
         });
 
-    </script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        lucide.createIcons();
     </script>
 
 </body>
