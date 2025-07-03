@@ -10,7 +10,7 @@
     <link href="./output.css" rel="stylesheet"/>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-    <script src="./languages/lang.js"></script>
+    <script src="../languages/lang.js"></script>
 
 </head>
 
@@ -61,7 +61,9 @@
                     </li>
 
                     <li>
-                        <button id="lang-toggle" class="text-sm text-text-primary">PT</button>
+                        <button id="lang-toggle" class="text-sm text-text-primary hover:cursor-pointer">
+                            <img id="lang-flag" src="https://flagcdn.com/w20/br.png" srcset="https://flagcdn.com/w40/br.png 2x" width="20" height="20" alt="Português"/>
+                        </button>
                     </li>
 
                 </ul>
@@ -93,13 +95,13 @@
 
             <section class="flex max-sm:flex-col p-8 md:p-12 gap-16">
                 <div class="md:sticky md:top-24 h-fit"> 
-                    <h4 class="text-3xl font-bold text-text-primary mb-2">Igor Ferrão, born and based in Brazil. 🇧🇷</h4>
-                    <p class="text-text-primary">Working with companies that have UX as part of their process, belief in collaborative working between teams.</p>
+                    <h4 data-i18n="originTitle" class="text-3xl font-bold text-text-primary mb-2">Igor Ferrão, born and based in Brazil.</h4>
+                    <p data-i18n="originText" class="text-text-primary">Working with companies that have UX as part of their process, belief in collaborative working between teams.</p>
                 </div>
                 <div class="flex flex-col">
-                    <h6 class="text-text-primary font-semibold mb-6">Expertise</h6>
+                    <h6 data-i18n="expertiseTitle" class="text-text-primary font-semibold mb-6">Expertise</h6>
                     <div class="grid grid-cols-1 sm:grid-cols-2 mb-16">
-                        <ul class="*:text-text-secondary *:items-center *:flex">
+                        <ul data-i18n-list="expertise1" class="*:text-text-secondary *:items-center *:flex">
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Managing design teams</li>
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Stakeholder management</li>
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Excellence framework</li>
@@ -107,7 +109,7 @@
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Usability testing sessions</li>
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Market research</li>
                         </ul>
-                        <ul class="*:text-text-secondary *:items-center *:flex ">
+                        <ul data-i18n-list="expertise2" class="*:text-text-secondary *:items-center *:flex ">
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>UX reports and audits</li>
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Evangelizing UX</li>
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Coach designers to deliver quality</li>
@@ -122,43 +124,47 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div class="bg-surface-1  text-text-primary mb-8">
-                                    <i class="ri-star-line mb-2 text-text-primary text-2xl"></i>
-                                    <p class="text-text-secondary"><strong class="text-text-primary">UXC (UX Certified)</strong> by the Nielsen Norman Group and Second Wave Dive (Strategic Business Thinking).</p>
+                                <i class="ri-star-line mb-2 text-text-primary text-2xl"></i>
+                                <p data-i18n="highlights1" class="text-text-secondary"><strong class="text-text-primary">UXC (UX Certified)</strong> by the Nielsen Norman Group and Second Wave Dive (Strategic Business Thinking).</p>
                             </div>
 
                             <div class="bg-surface-1 text-text-primary mb-8">
-                                    <i class="ri-star-line mb-2 text-text-primary text-2xl"></i>
-                                    <p>Background working with design agencies, startups and corporate companies to <strong>deliver websites and native apps.</strong></p>
+                                <i class="ri-git-commit-line mb-2 text-text-primary text-2xl"></i>
+                                <p data-i18n="highlights2" class="text-text-secondary">Background working with design agencies, startups and corporate companies to <strong>deliver websites and native apps.</strong></p>
                             </div>
 
                             <div class="bg-surface-1 text-text-primary mb-8">
-                                    <i data-lucide="message-circle-more" class="mb-2 text-text-primary"></i>
-                                    <p><strong>Spoke at numerous events </strong>about design, user experience, design systems and team management.</p>
+                                <i class="ri-speak-line mb-2 text-text-primary text-2xl"></i>
+                                <p data-i18n="highlights3" class="text-text-secondary"><strong>Spoke at numerous events </strong>about design, user experience, design systems and team management.</p>
                             </div>
 
                             <div class="bg-surface-1 text-text-primary mb-8">
-                                    <i data-lucide="graduation-cap" class="mb-2 text-text-primary"></i>
-                                    <p><strong>Founder and Instructor @ <a href="https://www.instagram.com/ferraodesign/" target="_blank" class="hover:underline">Ferrão Design</a></strong>, an immersive User Experience training with 4500+ alumni in Brazil.</p>
+                                <i class="ri-briefcase-line mb-2 text-text-primary text-2xl"></i>
+                                <p data-i18n="highlights4"><strong>Founder and Instructor @ <a href="https://www.instagram.com/ferraodesign/" target="_blank" class="hover:underline">Ferrão Design</a></strong>, an immersive User Experience training with 4500+ alumni in Brazil.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             
-            <footer class="flex max-sm:flex-col p-8 md:p-12 gap-16 bg-bg-background-inverted rounded-br-2xl rounded-bl-2xl">
-                <div class="flex flex-col">
-                    <h2 class="font-bold text-3xl text-text-inverted mb-14">Let's talk about design, marketing, business, or one of my hobbies like chess or coffee, maybe?</h2>
-                    <a href="#" class="flex items-center space-x-1 mb-4">
-                        <span class="text-text-inverted text-2xl font-light leading-8">Igor</span>
-                        <span class="text-text-inverted text-2xl font-medium leading-8">Ferrão</span>
-                    </a>
-
-                    <div class="flex *:flex *:justify-center *:items-center gap-3 text-text-inverted [&>div>a>i]:text-2xl *:size-10 *:rounded-full *:bg-bg-surface-1/10">
-                        <div><a href="https://www.instagram.com/igoorferrao/"><i class="ri-instagram-line"></i></a></div>
-                        <div><a href="https://www.linkedin.com/igor-ferrao-de-souza/"><i class="ri-linkedin-line"></i></a></div>
-                        <div><a href="https://www.youtube.com/igoorferrao/"><i class="ri-youtube-line"></i></a></div>
+            <footer class="flex p-8 md:p-12 bg-bg-background-inverted rounded-br-2xl rounded-bl-2xl text-text-inverted">
+                <div class="flex flex-col md:flex-row md:items-center">
+                    <h3 data-i18n="footerHeading" class="md:w-1/2 font-bold text-2xl text-text-inverted mb-8">Let's talk about design, marketing, business, or one of my hobbies like chess or coffee, maybe?</h3>
+                    <div class="flex flex-col md:items-end md:w-1/2">
+                        <a href="#" class="mb-4">
+                            <span class="text-xl font-light leading-8">Igor</span>
+                            <span class="text-xl font-medium leading-8">Ferrão</span>
+                        </a>
+                        <div class="flex *:flex *:justify-center *:items-center gap-3 [&>div>a>i]:text-2xl *:size-10 *:rounded-full *:bg-bg-surface-1/10 mb-8">
+                            <div><a href="https://www.instagram.com/igoorferrao/"><i class="ri-instagram-line"></i></a></div>
+                            <div><a href="https://www.linkedin.com/igor-ferrao-de-souza/"><i class="ri-linkedin-line"></i></a></div>
+                            <div><a href="https://www.youtube.com/igoorferrao/"><i class="ri-youtube-line"></i></a></div>
+                        </div>
+                        <p data-i18n="copyright" class="text-sm">Copyright © 2025 Igor Ferrão.</p>
+                        <p data-i18n="rights" class="text-sm">All Rights Reserved.</p>
                     </div>
                 </div>
+
             </footer>
         </main>
     </div>
@@ -202,22 +208,57 @@
             elements.forEach(el => {
                 const key = el.getAttribute("data-i18n");
                 if (translations[lang] && translations[lang][key]) {
-                el.innerHTML = translations[lang][key];
+                    el.innerHTML = translations[lang][key];
                 }
             });
-            localStorage.setItem("lang", lang);
-            document.getElementById("lang-toggle").textContent = lang.toUpperCase();
+
+            const lists = document.querySelectorAll("[data-i18n-list]");
+            lists.forEach(list => {
+            const key = list.getAttribute("data-i18n-list");
+            const items = translations[lang][key];
+
+            if (Array.isArray(items)) {
+                list.innerHTML = ""; // Limpa conteúdo anterior
+                items.forEach(item => {
+                const li = document.createElement("li");
+                li.innerHTML = `<i class='ri-arrow-drop-right-line mr-2'></i>${item}`;
+                list.appendChild(li);
+                });
             }
+            });
 
-            
-            const userLang = localStorage.getItem("lang") || "pt";
-            applyTranslation(userLang);
+            localStorage.setItem("lang", lang);
 
-            // Alternância de idioma ao clicar no botão
-            document.getElementById("lang-toggle").addEventListener("click", () => {
-            const currentLang = localStorage.getItem("lang") || "pt";
-            const nextLang = currentLang === "pt" ? "en" : currentLang === "en" ? "es" : "pt";
-            applyTranslation(nextLang);
+            // Atualiza a bandeira e alt do botão
+            const langFlag = document.getElementById("lang-flag");
+            switch (lang) {
+                case "pt":
+                langFlag.src = "https://flagcdn.com/w20/br.png";
+                langFlag.srcset = "https://flagcdn.com/w40/br.png 2x";
+                langFlag.alt = "Português";
+                break;
+                case "en":
+                langFlag.src = "https://flagcdn.com/w20/us.png";
+                langFlag.srcset = "https://flagcdn.com/w40/us.png 2x";
+                langFlag.alt = "English";
+                break;
+                case "es":
+                langFlag.src = "https://flagcdn.com/w20/es.png";
+                langFlag.srcset = "https://flagcdn.com/w40/es.png 2x";
+                langFlag.alt = "Español";
+                break;
+            }
+        }
+
+        // Detecta idioma salvo ou assume "pt"
+        const userLang = localStorage.getItem("lang") || "pt";
+        applyTranslation(userLang);
+
+        // Alterna idioma ao clicar no botão
+        document.getElementById("lang-toggle").addEventListener("click", () => {
+        const currentLang = localStorage.getItem("lang") || "pt";
+        const nextLang = currentLang === "pt" ? "en" : currentLang === "en" ? "es" : "pt";
+        applyTranslation(nextLang);
         });
 
     </script>
