@@ -36,23 +36,23 @@ const translations = {
     ],
 
     highlights1: [
-      "Certificado em UX (UXC) pelo Nielsen Norman Group e Second Wave Dive (Pensamento Estratégico de Negócios)."
+      "Reconhecido por contribuir em projetos de alto impacto que ajudaram a VTV SBT a alcançar mais de <strong class=\"text-text-primary\">5,5 milhões de seguidores no Facebook</strong>."
     ],
 
     highlights2: [
-      "Experiência em agências, startups e empresas corporativas para entrega de websites e aplicativos nativos."
+      "Experiência em agências, startups e empresas corporativas para <strong class=\"text-text-primary\">entrega de websites e aplicativos nativos.</strong>"
     ],
 
     highlights3: [
-      "Palestrante em diversos eventos sobre design, experiência do usuário, design systems e gestão de equipes."
+      "<strong class=\"text-text-primary\">Palestrante em diversos eventos</strong> sobre design, experiência do usuário, design systems e gestão de equipes."
     ],
 
     highlights4: [
-      "Fundador e instrutor na Ferrão Design, treinamento imersivo em UX com mais de 4500 alunos no Brasil."
+      "<strong class=\"text-text-primary\">Fundador e instrutor na @ <a href=\"https://www.instagram.com/ferraodesign/\" target=\"_blank\" class=\"hover:underline\">Ferrão Design</a></strong>, um espaço de aprendizado prático e profundo pelo universo do design digital."
     ],
 
 
-    footerHeading: "Vamos conversar sobre design, marketing, negócios ou um dos meus hobbies como xadrez ou café, talvez?",
+    footerHeading: "Design, marketing, negócios ou café?<br>Se uma dessas te chamou atenção, já temos um ótimo começo.",
     copyright: "Copyright © 2025 Igor Ferrão.",
     rights: "Todos os direitos reservados."
   },
@@ -93,22 +93,22 @@ const translations = {
     ],
 
     highlights1: [
-      "UXC (UX Certified) by the Nielsen Norman Group and Second Wave Dive (Strategic Business Thinking)."
+      "Recognized for contributing to high-impact projects that helped VTV SBT reach over <strong class=\"text-text-primary\">5.5M followers on Facebook</strong>."
     ],
 
     highlights2: [
-      "Background working with design agencies, startups and corporate companies to deliver websites and native apps."
+      "Background working with design agencies, startups and corporate companies to <strong class=\"text-text-primary\">deliver websites and native apps.</strong>"
     ],
 
     highlights3: [
-      "Spoke at numerous events about design, user experience, design systems and team management."
+      "<strong class=\"text-text-primary\">Spoke at numerous events</strong> about design, user experience, design systems and team management."
     ],
 
     highlights4: [
-      "Founder and Instructor @ Ferrão Design, an immersive User Experience training with 4500+ alumni in Brazil."
+      "<strong class=\"text-text-primary\">Founder and Instructor @ <a href=\"https://www.instagram.com/ferraodesign/\" target=\"_blank\" class=\"hover:underline\">Ferrão Design</a></strong>, a practical and immersive training program in the world of digital design."
     ],
 
-    footerHeading: "Let's talk about design, marketing, business, or one of my hobbies like chess or coffee, maybe?",
+    footerHeading: "Design, marketing, business, or coffee?<br>If any of these caught your attention, we already have a great start.",
     copyright: "Copyright © 2025 Igor Ferrão.",
     rights: "All Rights Reserved."
   },
@@ -149,22 +149,22 @@ const translations = {
     ],
 
     highlights1: [
-      "Certificado en UX (UXC) por Nielsen Norman Group y Second Wave Dive (Pensamiento Estratégico de Negocios)."
+      "Reconocido por contribuir a proyectos clave que ayudaron a VTV SBT a superar los <strong class=\"text-text-primary\">5,5M de seguidores en Facebook.</strong>."
     ],
 
     highlights2: [
-      "Experiencia en agencias de diseño, startups y empresas corporativas para entregar sitios web y aplicaciones nativas."
+      "Experiencia en agencias de diseño, startups y empresas corporativas para <strong class=\"text-text-primary\">entregar sitios web y aplicaciones nativas.</strong>"
     ],
 
     highlights3: [
-      "Conferencista en numerosos eventos sobre diseño, experiencia de usuario, design systems y gestión de equipos."
+      "<strong class=\"text-text-primary\">Conferencista en numerosos eventos</strong> sobre diseño, experiencia de usuario, design systems y gestión de equipos."
     ],
 
     highlights4: [
-      "Fundador e instructor en Ferrão Design, capacitación inmersiva en UX con más de 4500 alumnos en Brasil."
+      "<strong class=\"text-text-primary\">Fundador e instructor en <a href=\"https://www.instagram.com/ferraodesign/\" target=\"_blank\" class=\"hover:underline\">Ferrão Design</a></strong>, un espacio de aprendizaje práctico y profundo por el universo del diseño digital."
     ],
 
-    footerHeading: "Hablemos sobre diseño, marketing, negocios o uno de mis pasatiempos como ajedrez o café, ¿tal vez?",
+    footerHeading: "¿Diseño, marketing, negocios o café?<br>Si alguno de estos te llamó la atención, ya tenemos un excelente comienzo",
     copyright: "Copyright © 2025 Igor Ferrão.",
     rights: "Todos los derechos reservados."
   }
