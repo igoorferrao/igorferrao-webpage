@@ -60,12 +60,24 @@
                         </button>
                     </li>
 
-                    <li>
-                        <button id="lang-toggle" class="text-sm text-text-primary hover:cursor-pointer">
-                            <img id="lang-flag" src="https://flagcdn.com/w20/br.png" srcset="https://flagcdn.com/w40/br.png 2x" width="20" height="20" alt="Português"/>
-                        </button>
-                    </li>
+                    <li class="relative">
+                        <div class="inline-block text-left">
+                            <button id="lang-dropdown-button" type="button" class="inline-flex w- items-center gap-x-2 rounded-xl bg-bg-surface-1 px-3 py-2 text-sm font-medium text-text-primary border border-border-primary hover:bg-gray-50 dark:hover:bg-zinc-800">
+                                <i class="ri-global-line text-base"></i>
+                                <span class="max-sm:hidden">Languages</span>
+                                <i class="ri-arrow-down-s-line text-base max-sm:hidden"></i>
+                            </button>
 
+                            <!-- Dropdown -->
+                            <div id="lang-dropdown-menu" class=" absolute right-0 z-20 mt-2 w-36 origin-top-right rounded-md bg-white dark:bg-zinc-900 shadow-lg ring-1 ring-black/10 dark:ring-white/10"role="menu" aria-orientation="vertical" tabindex="-1">
+                                <ul>
+                                    <li><button class="lang-option w-full px-4 py-3 text-left text-sm text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-zinc-700" data-lang="pt"><img id="lang-flag" src="https://flagcdn.com/w20/br.png" srcset="https://flagcdn.com/w40/br.png 2x" width="24" height="24" alt="Português" class="inline-flex mr-2"/>Português</button></li>
+                                    <li><button class="lang-option w-full px-4 py-3 text-left text-sm text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-zinc-700" data-lang="en"><img id="lang-flag" src="https://flagcdn.com/w20/us.png" srcset="https://flagcdn.com/w40/us.png 2x" width="24" height="24" alt="English" class="inline-flex mr-2"/> English</button></li>
+                                    <li><button class="lang-option w-full px-4 py-3 text-left text-sm text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-zinc-700 " data-lang="es"><img id="lang-flag" src="https://flagcdn.com/w20/es.png" srcset="https://flagcdn.com/w40/es.png 2x" width="24" height="24" alt="Español" class="inline-flex mr-2"/> Español</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
 
@@ -94,14 +106,14 @@
             </section>
 
             <section class="flex max-sm:flex-col p-8 md:p-12 gap-16">
-                <div class="md:sticky md:top-24 h-fit"> 
+                <div class="md:sticky md:top-48 h-fit"> 
                     <h4 data-i18n="originTitle" class="text-3xl font-bold text-text-primary mb-2">Igor Ferrão, born and based in Brazil.</h4>
                     <p data-i18n="originText" class="text-text-primary">Working with companies that have UX as part of their process, belief in collaborative working between teams.</p>
                 </div>
                 <div class="flex flex-col">
                     <h6 data-i18n="expertiseTitle" class="text-text-primary font-semibold mb-6">Expertise</h6>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 mb-16">
-                        <ul data-i18n-list="expertise1" class="*:text-text-secondary *:items-center *:flex">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 mb-16 [&>ul>li]:flex [&>ul>li]:items-start">
+                        <ul data-i18n-list="expertise1" class="*:text-text-secondary">
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Managing design teams</li>
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Stakeholder management</li>
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Excellence framework</li>
@@ -109,7 +121,7 @@
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Usability testing sessions</li>
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Market research</li>
                         </ul>
-                        <ul data-i18n-list="expertise2" class="*:text-text-secondary *:items-center *:flex ">
+                        <ul data-i18n-list="expertise2" class="*:text-text-secondary ">
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>UX reports and audits</li>
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Evangelizing UX</li>
                             <li><i class="ri-arrow-drop-right-line mr-2"></i>Coach designers to deliver quality</li>
@@ -140,7 +152,7 @@
 
                             <div class="bg-surface-1 text-text-primary mb-8">
                                 <i class="ri-briefcase-line mb-2 text-text-primary text-2xl"></i>
-                                <p data-i18n="highlights4"><strong>Founder and Instructor @ <a href="https://www.instagram.com/ferraodesign/" target="_blank" class="hover:underline">Ferrão Design</a></strong>, an immersive User Experience training with 4500+ alumni in Brazil.</p>
+                                <p data-i18n="highlights4" class="text-text-secondary"><strong>Founder and Instructor @ <a href="https://www.instagram.com/ferraodesign/" target="_blank" class="hover:underline">Ferrão Design</a></strong>, an immersive User Experience training with 4500+ alumni in Brazil.</p>
                             </div>
                         </div>
                     </div>
@@ -228,27 +240,31 @@
             });
 
             localStorage.setItem("lang", lang);
-
-            // Atualiza a bandeira e alt do botão
-            const langFlag = document.getElementById("lang-flag");
-            switch (lang) {
-                case "pt":
-                langFlag.src = "https://flagcdn.com/w20/br.png";
-                langFlag.srcset = "https://flagcdn.com/w40/br.png 2x";
-                langFlag.alt = "Português";
-                break;
-                case "en":
-                langFlag.src = "https://flagcdn.com/w20/us.png";
-                langFlag.srcset = "https://flagcdn.com/w40/us.png 2x";
-                langFlag.alt = "English";
-                break;
-                case "es":
-                langFlag.src = "https://flagcdn.com/w20/es.png";
-                langFlag.srcset = "https://flagcdn.com/w40/es.png 2x";
-                langFlag.alt = "Español";
-                break;
-            }
         }
+
+        // Dropdown toggle
+        const dropdownButton = document.getElementById("lang-dropdown-button");
+        const dropdownMenu = document.getElementById("lang-dropdown-menu");
+
+        dropdownButton.addEventListener("click", () => {
+        dropdownMenu.classList.toggle("hidden");
+        });
+
+        // Fecha o dropdown ao clicar fora
+        document.addEventListener("click", (e) => {
+        if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.classList.add("hidden");
+        }
+        });
+
+        // Seleção de idioma
+        document.querySelectorAll(".lang-option").forEach(button => {
+        button.addEventListener("click", (e) => {
+            const lang = e.currentTarget.getAttribute("data-lang");
+            applyTranslation(lang);
+            dropdownMenu.classList.add("hidden");
+        });
+        });
 
         // Detecta idioma salvo ou assume "pt"
         const userLang = localStorage.getItem("lang") || "pt";
