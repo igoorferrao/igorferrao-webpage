@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg-bg-background [background-image:radial-gradient(at_-50%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(255,_255,_255,_0)_50%),radial-gradient(at_160%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(255,_255,_255,_0)_50%),radial-gradient(at_180%_120%,oklch(76.9%_0.188_70.08)_0%,rgba(0,0,0,_0)_50%)] [dark:background-image:radial-gradient(at_-45%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(0,0,0,_0)_50%),radial-gradient(at_140%_0%,oklch(76.9%_0.188_70.08)_0%,rgba(255,_255,_255,_0)_50%),radial-gradient(at_180%_120%,oklch(76.9%_0.188_70.08)_0%,rgba(0,0,0,_0)_50%)]">
-    
+
     <div class="w-auto min-h-screen flex justify-center items-center p-4"> 
        
         <main class="bg-bg-surface-1 w-full max-w-[1200px] flex-1 rounded-xl shadow-xl dark:shadow-white/5">
@@ -48,10 +48,12 @@
                         </a>
                     </li>
 
-                    <li>
-                        <a data-i18n="contact" href="http://wa.me/+5513996161204" class="inline-flex items-center gap-1 text-text-primary hover:text-amber-500">
-                            Contato
-                        </a>
+                    <li class="inline-flex group">
+                        <a data-i18n="contact" href="http://wa.me/+5513996161204" class="items-center gap-1 text-text-primary hover:text-amber-500">Contato</a>
+                        <span class="relative flex size-3 top-2 -right-2 md:opacity-0 md:group-hover:opacity-100">
+                            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand opacity-75"></span>
+                            <span class="relative inline-flex size-3 rounded-full bg-brand"></span>
+                        </span>
                     </li>
 
                     <li class="flex items-center">
